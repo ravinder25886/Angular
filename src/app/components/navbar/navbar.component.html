@@ -1,0 +1,19 @@
+<mat-toolbar color="primary" *ngIf="authenticationService.isLoggedIn">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon >important_devices</mat-icon>
+    </button>
+    <h1>Service manager</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <!-- <a mat-button [routerLink]="'/accounts'"> Accounts </a>
+      <a mat-button [routerLink]="'/activities'"> Activities </a> -->
+      <a mat-button mat-raised-button routerLinkActive="active" (click)="logout()">Log out</a>
+
+    </div>
+  </mat-toolbar-row>
+
+  <!--<mat-toolbar-row>
+    <span style="font-size: 12px;">SimpleCRM helps you easily manage your contacts</span>
+  </mat-toolbar-row>-->
+</mat-toolbar>
